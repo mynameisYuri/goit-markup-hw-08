@@ -1,0 +1,97 @@
+.ourteam {
+    background-color: var(--fours_background_page_color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.ourteam__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header_color_2);
+
+    margin-bottom: 50px;
+}
+
+.ourteam__boxes {
+    background-color: var(--first_background_page_color);
+    box-sizing: content-box;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ourteam__boxes:not(:last-child) {
+    margin-right: 30px;
+}
+
+.ourteam__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ourteam__items {
+    display: flex;
+    justify-content: center;
+}
+
+.ourteam__svg {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.ourteam__button {
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--first_background_page_color);
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            border: none;
+            background: var(--hover_color);
+            fill: var(--first_background_page_color);
+        }
+    &:focus {
+        background: var(--hover_color);
+        fill: var(--first_background_page_color);
+    }
+}
+
+.ourteam__buttons:not(:last-child) {
+    margin-right: 10px;
+}
+
+.ourteam__specialistph {
+    margin-bottom: 30px;
+}
+
+.ourteam__specialistn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header_color_2);
+
+    margin-bottom: 10px;
+}
+
+.ourteam__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header_color_3);
+    margin-bottom: 16px;
+}

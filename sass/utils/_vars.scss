@@ -1,0 +1,25 @@
+/* Селектори 
+Назва тегу (наприклад body)  Універсальний
+Назва тегу                   Тег
+#                            ID
+.                            Клас
+[]                           Атрибут
+.                            Нащадка
+.                            Дочірній
+*/
+
+:root {
+    --header_color_logo_studio_mail: #2196F3;
+    --header_color_logo_p2: black;
+    --header_color_2: #212121;
+    --header_color_3: #757575;
+    --footer_color_mail_tel: rgba(255, 255, 255, 0.6);
+    --header_font_size: 14px;
+    --header_line-height: 1.14;
+    --first_background_page_color: #FFFFFF;
+    --second_background_page_color: #2F303A;
+    --third_background_page_color: #E5E5E5;
+    --fours_background_page_color: #F5F4FA;
+    --hover_color: #2196F3;
+    --hover_btn_color: #188CE8;
+}

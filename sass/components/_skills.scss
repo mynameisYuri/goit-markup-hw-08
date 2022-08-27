@@ -1,0 +1,100 @@
+.skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.skills__box,
+.whatwedo__box {
+    display: flex;
+}
+
+.whatwedo__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.whatwedo__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--first_background_page_color);
+
+    position: absolute;
+
+    width: 370px;
+    height: 70px;
+
+    bottom: 0;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+}
+
+.skills__box {
+    justify-content: space-between;
+    .skills__list {
+            width: 270px;
+            text-align: left;
+        }
+}
+
+
+
+.skills__container {
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--fours_background_page_color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.skills__title {
+    font-weight: 700;
+    font-size: var(--header_font_size);
+    line-height: var(--header_line-height);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header_color_2);
+    margin-bottom: 10px;
+}
+
+.skills__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--header_color_3);
+}
+
+.whatwedo {
+    padding-bottom: 94px;
+}
+
+.whatwedo__occupation {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header_color_2);
+    margin-bottom: 50px;
+}
+
+.whatwedo__box {
+    justify-content: space-between;
+}
+
+.whatwedo__list:not(:last-child) {
+    margin-right: 30px;
+}

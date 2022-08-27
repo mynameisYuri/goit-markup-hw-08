@@ -1,0 +1,154 @@
+.header_block {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #ECECEC;
+    border-width: 0px 0px 1px 0px;
+}
+
+.header_structure,
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__links:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .contacts__list+.contacts__list {
+    margin-left: 50px;
+}
+
+.nav__logo {
+    margin-right: 93px;
+}
+
+.nav__logoone {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header_color_logo_studio_mail);
+}
+
+.nav__logotwo {
+    color: var(--header_color_logo_p2);
+}
+
+.nav__menu {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--header_font_size);
+    line-height: var(--header_line-height);
+    letter-spacing: 0.02em;
+    color: var(--header_color_2);
+
+    position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: var(--header_font_size);
+            line-height: var(--header_line-height);
+            letter-spacing: 0.02em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}
+
+.nav__active::after {
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: -32px;
+
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--hover_color);
+    border-radius: 2px;
+}
+
+.contacts__svg {
+    margin-right: 10px;
+    align-items: center;
+    stroke: currentColor;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            color: var(--hover_color);
+            stroke: var(--hover_color);
+            fill: var(--hover_color);
+        }
+}
+
+.contacts__mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--header_font_size);
+    line-height: var(--header_line-height);
+    letter-spacing: 0.02em;
+    color: var(--header_color_3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: var(--header_font_size);
+            line-height: var(--header_line-height);
+            letter-spacing: 0.02em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}
+
+.contacts__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--header_font_size);
+    line-height: var(--header_line-height);
+    letter-spacing: 0.02em;
+    color: var(--header_color_3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: var(--header_font_size);
+            line-height: var(--header_line-height);
+            letter-spacing: 0.02em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}

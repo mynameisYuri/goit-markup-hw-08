@@ -1,0 +1,21 @@
+@import './utils/vars';
+
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+@import './utils/placeholder';
+
+@import './components/container';
+@import './components/btn';
+@import './components/footer';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/mainblock';
+@import './components/skills';
+@import './layout/our_team';
+@import './layout/regular_customers';
+
+@import './portfolio/header-style';
+@import './portfolio/portfolio_btn_block';
+@import './portfolio/portfolio_cards';

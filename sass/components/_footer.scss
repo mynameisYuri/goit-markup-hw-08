@@ -1,0 +1,251 @@
+.fsections {
+    display: flex;
+}
+
+.firstfsection {
+    margin-right: 70px;
+}
+
+.fcontacts {
+    background-color: var(--second_background_page_color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.firstfsection__logo {
+    margin-bottom: 20px;
+}
+
+.firstfsection__logoone {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--header_color_logo_studio_mail);
+}
+
+.firstfsection__logotwo {
+    color: var(--first_background_page_color);
+}
+
+.firstfsection__list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.firstfsection__adress {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--header_font_size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--first_background_page_color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: var(--header_font_size);
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}
+
+.firstfsection__mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--header_font_size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(225, 225, 225, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: var(--header_font_size);
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}
+
+.firstfsection__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--header_font_size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(225, 225, 225, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: var(--header_font_size);
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--hover_color);
+        }
+    &:focus {
+        color: var(--hover_color);
+    }
+}
+
+
+
+.secondfsection {
+    margin-top: 12px;
+    margin-right: 93px;
+}
+
+.secondfsection__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--first_background_page_color);
+    margin-bottom: 20px;
+}
+
+.secondfsection__list {
+    display: flex;
+}
+
+.secondfsection__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.secondfsection__button {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--first_background_page_color);
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            background: var(--hover_color);
+        }
+    &:focus {
+        background: var(--hover_color);
+    }
+}
+
+.secondfsection__svg {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.thirdfsection {
+    margin-top: 12px;
+}
+
+.thirdfsection__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--first_background_page_color);
+    margin-bottom: 20px;
+}
+
+.thirdfsection__list {
+    display: flex;
+}
+
+.thirdfsection__input {
+    width: 358px;
+    height: 50px;
+    background: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-right: 12px;
+
+    padding: 15px 16px;
+}
+
+.thirdfsection__input[type=email] {
+    color: var(--first_background_page_color);
+}
+
+.thirdfsection__input::placeholder {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.thirdfsection__button {
+    display: flex;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+
+    color: var(--first_background_page_color);
+    background-color: var(--header_color_logo_studio_mail);
+
+    font-family: "Roboto";
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            background-color: var(--hover_btn_color);
+        }
+}
+
+.thirdfsection__svg {
+    fill: var(--first_background_page_color);
+    text-align: center;
+    margin-left: 10px;
+}

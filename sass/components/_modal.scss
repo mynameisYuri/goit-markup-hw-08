@@ -1,0 +1,309 @@
+.backdrop {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--first_background_page_color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__closebtn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: #000000;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            fill: var(--header_color_logo_studio_mail);
+        }
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form__titlebox {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: var(--header_color_2);
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    letter-spacing: 0.01em;
+
+    color: var(--header_color_3);
+}
+
+.form__fieldtitle {
+    margin-bottom: 4px;
+}
+
+
+
+.form__date {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    border: transparent;
+    outline: transparent;
+
+    padding-left: 42px;
+
+    &:focus {
+            border-color: var(--header_color_logo_studio_mail);
+        }
+}
+
+.form__fieldbox {
+    position: relative;
+    fill: var(--header_color_2);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            border-color: var(--header_color_logo_studio_mail);
+            fill: var(--header_color_logo_studio_mail);
+        }
+    &:focus {
+        border-color: var(--header_color_logo_studio_mail);
+        fill: var(--header_color_logo_studio_mail);
+    }
+}
+
+.form__date:focus+.form__svg {
+    fill: var(--header_color_logo_studio_mail);
+    border-color: var(--header_color_logo_studio_mail);
+}
+
+.form__svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form__comment {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    letter-spacing: 0.01em;
+
+    color: var(--header_color_3);
+}
+
+.form__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form__checkbox:checked+.form__customcheckbox {
+    border-color: var(--header_color_logo_studio_mail);
+    background-color: var(--header_color_logo_studio_mail);
+
+    background-image: url('../images/svg/Homework_6_5_chek.svg');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.form__customcheckbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--header_color_2);
+    border-radius: 2px;
+}
+
+.form__agreement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+
+    letter-spacing: 0.03em;
+
+    color: var(--header_color_3);
+
+    text-align: center;
+}
+
+.form__comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__description {
+    resize: none;
+    width: 100%;
+    height: 120px;
+
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            border: 1px solid var(--header_color_logo_studio_mail);
+        }
+    &:focus {
+        outline: none;
+        border: 1px solid var(--header_color_logo_studio_mail);
+    }
+}
+
+.form__description::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    &:hover {
+            color: var(--header_color_logo_studio_mail);
+        }
+}
+
+// .comment::placeholder
+
+.form__agreement {
+    margin-bottom: 30px;
+
+}
+
+.form__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+
+    letter-spacing: 0.03em;
+
+    color: var(--header_color_logo_studio_mail);
+}
+
+.form__btnbox {
+    text-align: center;
+}
+
+.form__btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+
+    color: var(--first_background_page_color);
+    background-color: var(--header_color_logo_studio_mail);
+
+    font-family: "Roboto";
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            background-color: var(--hover_btn_color);
+        }
+}
