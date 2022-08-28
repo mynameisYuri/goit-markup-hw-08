@@ -484,7 +484,7 @@ body {
 
 .form__checkbox:checked + .form__customcheckbox {
   border-color: var(--header_color_logo_studio_mail);
-  background-color: var(--header_color_logo_studio_mail);
+  background-color: orangered;
   background-image: url("../images/svg/Homework_6_5_chek.svg");
   background-size: contain;
   background-repeat: no-repeat;
