@@ -39,10 +39,57 @@
 
 .skills__box {
     justify-content: space-between;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    @media screen and (min-width: 768px) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
     .skills__list {
-            width: 270px;
+
+            // width: 270px;
+            width: 100%;
             text-align: left;
-        }
+
+            @media screen and (min-width: 768px) {
+            // flex-basis: 50%;
+            flex-basis: calc((100% - 3 * 60px) / 2);
+            margin-right: 15px;
+            margin-left: 15px;
+            }
+            @media screen and (min-width: 1600px) {
+            // flex-basis: 25%;
+            flex-basis: calc((100% - 5 * 120px) / 4);
+            margin-right: 15px;
+            margin-left: 15px;
+            }
+
+            @media screen and (max-width: 1599px) {
+            margin-bottom: 30px;
+            }
+
+            &:nth-last-child(1) {
+            @media screen and (max-width: 1599px) {
+            margin-bottom: 0px;
+            } 
+            }
+
+            &:nth-last-child(2) {
+            @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+            }
+            }
+
+    }
 }
 
 
